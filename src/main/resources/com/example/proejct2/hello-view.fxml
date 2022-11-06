@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="425.0" prefWidth="575.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proejct2.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label fx:id="label" />
+   <Label text="Welcome To Rock Paper Lizard Spock">
+
+   </Label>
+    <Label text="Choose An Option: ">
+
+    </Label>
+   <GridPane>
+      <columnConstraints>
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <children>
+
+         <ButtonBar prefHeight="126.0" prefWidth="557.0">
+           <buttons>
+               <ImageView fitHeight="97.0" fitWidth="96.0" nodeOrientation="INHERIT" onMouseClicked="#onScissorsButtonClick" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="C:\Users\abeal\IdeaProjects\Proejct2\src\main\resources\ScissorsJava.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="83.0" fitWidth="79.0" onMouseClicked="#onPaperButtonClick" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="C:\Users\abeal\IdeaProjects\Proejct2\src\main\resources\PaperJava.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="70.0" fitWidth="92.0" onMouseClicked="#onLizardButtonClick" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="C:\Users\abeal\IdeaProjects\Proejct2\src\main\resources\LizardJava.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="87.0" fitWidth="114.0" onMouseClicked="#onRockButtonClick" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="C:\Users\abeal\IdeaProjects\Proejct2\src\main\resources\NewRock.jpeg" />
+                  </image></ImageView>
+               <ImageView fitHeight="86.0" fitWidth="119.0" onMouseClicked="#onSpockButtonClick" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="C:\Users\abeal\IdeaProjects\Proejct2\src\main\resources\RealSpock.png" />
+                  </image>
+               </ImageView>
+           </buttons>
+         </ButtonBar>
+      </children>
+   </GridPane>
+
+</VBox>
